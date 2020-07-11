@@ -1,4 +1,46 @@
 .navFont {
-    font-family: 'Poiret One', cursive;
-    font-size: 48px;
-  }
+  font-family: 'Poiret One', cursive;
+  font-size: 48px;
+}
+
+#wrap { 
+	width: 900px; 
+	margin: 0 auto; 
+}
+
+#home, #bio, #contactUs {
+  padding: 5px;
+  max-width: 100%;  
+}
+
+#home {
+  background-color: antiquewhite;
+}
+
+#bio {
+  background-color: rgba(250, 235, 215, 0.575);
+}
+
+#contactUs {
+  background-color: antiquewhite;
+}
+
+.home-image {
+  max-width: 100%;
+}
+
+h6 {
+  text-align: center;
+}
+
+.subscription {
+  text-align: center;
+}
+
+footer {
+  background-color: grey;
+}
+
+#instagram {
+  max-width: 100px;
+}
