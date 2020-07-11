@@ -1,0 +1,25 @@
+{
+  "name": "soma_kitchen",
+  "version": "1.0.0",
+  "description": "Soma Kitchen, local LA catering company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zcorpuz/soma_kitchen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zcorpuz/soma_kitchen/issues"
+  },
+  "homepage": "https://github.com/zcorpuz/soma_kitchen#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.3.0"
+  }
+}
