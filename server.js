@@ -9,7 +9,17 @@ var express = require("express");
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = process.env.PORT || 8080;
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+
+//set up handlebars
+const exphbs = require('express-handlebars');
+app.engine('handlebars', exphbs({
+    defaultLayout: 'main'
+}));
+app.set('view engine', 'handlebars');
+
 
 // Requiring our models for syncing
 const db = require("./models");
