@@ -2,3 +2,4 @@
 DROP DATABASE IF EXISTS somaKitchen;
 -- Creates the "blogger" database --
 CREATE DATABASE somaKitchen;
+-- waiting to commit 
