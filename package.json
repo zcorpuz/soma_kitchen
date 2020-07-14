@@ -18,9 +18,15 @@
   },
   "homepage": "https://github.com/zcorpuz/soma_kitchen#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "express-handlebars": "^5.0.0",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "sequelize": "^6.3.0"
   }
