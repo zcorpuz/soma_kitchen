@@ -4,7 +4,7 @@
   "description": "Soma Kitchen, local LA catering company.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -13,13 +13,16 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zcorpuz/soma_kitchen/issues"
+    "url": "https://github.com/zcorpuz/soma_kitchen.git"
   },
   "homepage": "https://github.com/zcorpuz/soma_kitchen#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.0.0",
     "mysql": "^2.18.1",
-    "sequelize": "^6.3.0"
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.0",
+    "stripe": "^8.69.0"
   }
 }
