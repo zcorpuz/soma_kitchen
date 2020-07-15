@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var morgan = require('morgan');
 var User = require('./models/user');
-var hbs = require('express-handlebars'); 
+const exphbs = require('express-handlebars');
 var path = require('path'); 
 
 
@@ -67,8 +67,14 @@ app.use(session({
 
 
 // handle bars config
-app.engine('handlebars', hbs({extname: 'handlebars',defaultLayout: 'main', layoutsDir: __dirname + '/views'}));
-app.set('views', path.join(__dirname, '/views/layouts')); 
+// app.engine('handlebars', hbs({extname: 'handlebars',defaultLayout: 'main', layoutsDir: __dirname + '/views'}));
+
+// app.engine(handlebars, exphbs({ demain}))
+
+app.engine('handlebars',exphbs({defaultLayout:'main'}));
+
+
+// app.set('views', path.join(__dirname, '/main')); 
 app.set('view engine', 'handlebars'); 
 
 
@@ -107,7 +113,7 @@ var hbsContent = {userName: '', loggedin: false, title: "You are not logged in t
 
 // route for Home-Page
 app.get('/', sessionChecker, (req, res) => {
-  res.redirect('/login');
+  res.render('index', {});
 });
 
 // route for user Login
@@ -209,7 +215,7 @@ app.listen(app.get('port'), () => console.log(`App started on port ${app.get('po
 // app.use(express.json());
 
 // // Static directory
-// app.use(express.static("public"));
+app.use(express.static("public"));
 
 // Routes
 // =============================================================

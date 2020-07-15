@@ -1,15 +1,15 @@
 {
     "development": {
       "username": "root",
-      "password": null,
+      "password": "blinky182",
       "database": "somaKitchen",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "password19",
-      "database": "database_test",
+      "password": "blinky182",
+      "database": "somaKitchen",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
