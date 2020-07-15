@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": null,
-      "database": "soma_db",
+      "database": "somaKitchen",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
@@ -14,7 +14,7 @@
       "dialect": "mysql"
     },
     "production": {
-      "use_env_variable": "JAWSDB_URL",
+      "use_env_variable": "",
       "dialect": "mysql"
     }
   }
