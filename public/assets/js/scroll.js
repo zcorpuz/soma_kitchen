@@ -1,7 +1,7 @@
 // Select element function
 // call this function where whatever you pass in will be returned to you
 
-function scroll () {
+(function () {
 
     const selectElement = function(element) {
         return document.querySelector(element);
@@ -45,7 +45,4 @@ function scroll () {
         delay: 600
     });
 
-}
-
-
-module.exports = scroll;
+})();

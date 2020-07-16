@@ -162,7 +162,7 @@ nav-link:hover {
 .home {
   width: 100%;
   height: 100vh;
-  background: url("images/IMG-1.png") center no-repeat;
+  background: url("../img/IMG-1.png") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -354,7 +354,7 @@ iframe {
 
 /* Elegant Dishes */
 .elegant-dishes {
-  background: url("images/IMG_3.png") center no-repeat;
+  background: url("../img/IMG_3.png") center no-repeat;
   background-size: cover;
 }
 
@@ -378,13 +378,13 @@ iframe {
 
 /* The Perfect Blend */
 .perfect-blend {
-  background: url("images/IMG_6.png") center no-repeat;
+  background: url("../img/IMG_6.png") center no-repeat;
   background-size: cover;
 }
 
 /* Fine Dining */
 .fine-dining {
-  background: url("images/IMG_6.png") center no-repeat;
+  background: url("../img/IMG_6.png") center no-repeat;
   background-size: cover;
 }
 

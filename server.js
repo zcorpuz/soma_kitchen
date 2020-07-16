@@ -25,6 +25,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // initializing cookie-parser to allow access to cookies stored in the browser. 
 app.use(cookieParser());
 
+// // Static directory
+app.use(express.static("public"));
+
+
 // initializing express-session to allow us track the logged-in user across sessions.
 app.use(session({
   key: 'user_sid',
@@ -214,8 +218,6 @@ app.listen(app.get('port'), () => console.log(`App started on port ${app.get('po
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());
 
-// // Static directory
-app.use(express.static("public"));
 
 // Routes
 // =============================================================
