@@ -1,4 +1,3 @@
-
 {{!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head> --}}
-
 <body>
     {{< nav }}
     <div class="row">
@@ -31,5 +29,23 @@
         </div>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+{{!--Stripe--}}
+{{!-- <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{stripePublishableKey}}"
+          data-amount="2500"
+          data-image="/img/---.png"
+          data-locale="auto">
+        </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase For $25</button>
+      </form>
+    </div>--}}
 </body>
 </html>
+
