@@ -156,7 +156,24 @@
         </div>
     </section>
 
-
+ {{!Stripe Checkout}}
+ <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Processed to Checkout, Thank you! / Leave a deposite 
+      
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_51H503gAWiJrXwbP871qiyUMP5f1oI99obC7nirCpAuUp3rHuvLq6i7LGnQLt80BokCGDoENh686ESCNhsC6Yvrcq006agjjpYL"
+          data-amount=""
+          data-name="CHECKOUT"
+          data-description="Payment Info"
+          data-image="/assets/img/smallSoma.png"
+          data-locale="auto">
+        </script>
+      </form>
+    </div>
 
 
 
