@@ -1,19 +1,21 @@
 // Server requirements for admin/login //
-var express = require('express');
-var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var morgan = require('morgan');
-var User = require('./models/user');
+const express = require('express');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const morgan = require('morgan');
+const User = require('./models/user');
 const exphbs = require('express-handlebars');
-var path = require('path'); 
+const path = require('path'); 
+const keys = require('./config/keys');
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 
 
 // creating variables to call the express application.
 var app = express();
 
-// seting our application port
+// setting our application port
 app.set('port', 9000);
 
 // Omar and the dude in the video used morgan. Not entirely sure what it does yet //
@@ -230,3 +232,5 @@ app.listen(app.get('port'), () => console.log(`App started on port ${app.get('po
 //     console.log("App listening on PORT " + PORT);
 //   });
 // });
+
+

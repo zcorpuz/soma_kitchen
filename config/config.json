@@ -1,14 +1,22 @@
 {
     "development": {
       "username": "root",
+<<<<<<< HEAD
+      "password": "password19",
+=======
       "password": "Finally08",
+>>>>>>> b7ff5858dd694fd614899b5b5318ecfb15ef086c
       "database": "somaKitchen",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
+<<<<<<< HEAD
+      "password": "password19",
+=======
       "password": "Finally08",
+>>>>>>> b7ff5858dd694fd614899b5b5318ecfb15ef086c
       "database": "somaKitchen",
       "host": "127.0.0.1",
       "dialect": "mysql"
