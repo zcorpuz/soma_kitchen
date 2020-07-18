@@ -1,5 +1,5 @@
 // Server requirements for admin/login //
-/*const express = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
@@ -232,54 +232,5 @@ app.listen(app.get('port'), () => console.log(`App started on port ${app.get('po
 //     console.log("App listening on PORT " + PORT);
 //   });
 // });
-*/
-
-const express = require('express');
-const keys = require('./config/keys');
-const stripe = require('stripe')('pk_test_51H503gAWiJrXwbP871qiyUMP5f1oI99obC7nirCpAuUp3rHuvLq6i7LGnQLt80BokCGDoENh686ESCNhsC6Yvrcq006agjjpYL');
-const bodyParser = require('body-parser');
-const exphbs = require('express-handlebars');
-
-const app = express();
 
 
-// Handlebars Middleware
-app.engine('handlebars',exphbs({defaultLayout:'main'}));
-app.set('view engine', 'handlebars');
-
-// Body Parser Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
-
-// Set Static Folder
-app.use(express.static(`${__dirname}/public`));
-
-// Index Route
-app.get('/', (req, res) => {
-  res.render('index', {
-    stripePublishableKey: keys.stripePublishableKey
-  });
-});
-
-// Charge Route
-app.post('/charge', (req, res) => {
-  const amount = 2500;
-  
-  stripe.customers.create({
-    email: req.body.stripeEmail,
-    source: req.body.stripeToken
-  })
-  .then(customer => stripe.charges.create({
-    amount,
-    description: 'Soma Kitchen',
-    currency: 'usd',
-    customer: customer.id
-  }))
-  .then(charge => res.render('success'));
-});
-
-const port = process.env.PORT || 5000;
-
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
