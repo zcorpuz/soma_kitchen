@@ -156,24 +156,40 @@
         </div>
     </section>
 
- {{!Stripe Checkout}}
- <div class="row">
-    <div class="col-md-6 text-center">
-      <h1 class="display-3 mt-3 pt-5">
-        Processed to Checkout, Thank you! / Leave a deposite 
-      
-      <form action="/charge" method="POST">
-        <script
-          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="pk_test_51H503gAWiJrXwbP871qiyUMP5f1oI99obC7nirCpAuUp3rHuvLq6i7LGnQLt80BokCGDoENh686ESCNhsC6Yvrcq006agjjpYL"
-          data-amount=""
-          data-name="CHECKOUT"
-          data-description="Payment Info"
-          data-image="/assets/img/smallSoma.png"
-          data-locale="auto">
-        </script>
-      </form>
-    </div>
+ {{!-- Square and Reservations --}}
+     <section id="reservations" class="kamayan">
+        <div class="container">
+            <div class="catering-info">
+                <div class="catering-description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">K</span>amayan 
+                        </h2>
+                        <h1 class="headline headline-dark">Reservation</h1>
+                        <div class="asterisk">
+                            <i class="fas fa-asterisk"></i>
+                        </div>
+                    </div>
+                    <p>Soma Kitchen offers a unique Filipino cultural culinary experience. Upon reservation, we offer a Kamayan service. What is Kamayan? Kamayan translates to "eating with your hands". You will enjoy an assortment of grilled meats, fish, an abundance of seafood, white and fried rice, and many more!</p>
+                    <p> If interested in making a reservation, you can contact us below to discuss your event needs. In order to confirm reservation, we require a $100.00 deposit. All information is secure through Square. 
+                    </p>
+                    <a href="#contactUs" class="btn body-btn"> Contact Us</a>
+                </div>
+                <div class="restaurant-info animate-right">
+
+                    <div id="form-container">
+                        <div id="sq-card-number"></div>
+                        <div class="third" id="sq-expiration-date"></div>
+                        <div class="third" id="sq-cvv"></div>
+                        <div class="third" id="sq-postal-code"></div>
+                        <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Confirm $100.00</button>
+                    </div> 
+                    
+                    <!-- end #form-container -->
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -213,5 +229,5 @@
             </div>
         </div>
     </section>
-
+    <script src = "../public/assets/js/setup.js"></script>
 {{>footer}}   
