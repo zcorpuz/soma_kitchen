@@ -1,17 +1,12 @@
 // Server requirements for admin/login //
-var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var morgan = require('morgan');
-var User = require('./models/user');
 const handlebars = require('express-handlebars');
-var path = require('path'); 
+const express = require('express');
+
 
 const express = require('express');
 
 
 const app = express();
-
 
 const PORT = process.env.PORT || 9000;
 
@@ -28,19 +23,12 @@ app.engine('handlebars', handlebars({
 //Serves static files (we need it to imPORT a css file)
 app.use(express.static('public'))
 
-
-
-
 //Sets a basic route
 app.get('/', (req, res) => {
     //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
     res.render('index', {layout : 'main'});
     });
 
-
-
-
-
-
 //Makes the app listen to PORT 9000
 app.listen(PORT, () => console.log(`App listening to PORT ${PORT}`));
+
