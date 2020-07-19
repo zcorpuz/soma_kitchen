@@ -21,7 +21,6 @@ app.engine('handlebars', handlebars({
     layoutsDir: __dirname + '/views/layouts',
     }));
 
-
 //Serves static files (we need it to imPORT a css file)
 app.use(express.static('public'))
 
