@@ -2,18 +2,23 @@
 // call this function where whatever you pass in will be returned to you
 
 (function () {
-
     const selectElement = function(element) {
         return document.querySelector(element);
     };
 
     let menuToggler = selectElement('.menu-toggle');
     let body = selectElement('body');
+    let navLinkClick = selectElement('.item-toggle');
+
 
     menuToggler.addEventListener('click', function () {
         body.classList.toggle('open');
     })
 
+    navLinkClick.addEventListener('click', function () {
+        body.classList.toggle('open');
+    })
+    
     // Scroll Reveal
     window.sr = ScrollReveal();
 

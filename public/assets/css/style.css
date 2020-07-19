@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
 /*Global styles*/
 *,
 *::before,
@@ -15,6 +16,7 @@
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
+    --tertiary-font-color: #5c6779;
     --body-font-color: #515151;
 }
 
@@ -49,7 +51,7 @@ p {
 
 .container {
   width: 100%;
-  /* max-width: 122.5rem; */
+  max-width: 122.5rem;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
@@ -62,6 +64,11 @@ header {
   left: 0;
   z-index: 1;
   background-image: linear-gradient(to bottom, rgba(0,0,0, .5) transparent);
+}
+
+#banner {
+  font-size: 10rem;
+  text-shadow: 1px 1px 1px black;
 }
 
 nav {
@@ -91,7 +98,7 @@ nav {
 
 .nav-list {
   list-style: none;
-  position: fixed;
+  position: absolute;
   /* will be floating */
   top: 0;
   left: 0;
@@ -122,24 +129,6 @@ nav {
   transition: opacity .5s;
 }
 
-/* will connect to JS element */
-.open .fa-times {
-  display: block;
-}
-
-.open .fa-bars {
-  display: none;
-}
-
-.open .nav-list {
-  transform: translateX(0);
-}
-
-.open .nav::before {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .nav-item {
   border-bottom: 2px solid rgba(255,255,255, .3);
 }
@@ -154,7 +143,7 @@ nav {
   transition: color .5s;
 }
 
-nav-link:hover {
+.nav-link:hover {
   color: var(--secondary-font-color);
 }
 
@@ -162,7 +151,7 @@ nav-link:hover {
 .home {
   width: 100%;
   height: 100vh;
-  background: url("../img/IMG-1.png") center no-repeat;
+  background: url("../img/IMG_3972.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -259,6 +248,7 @@ nav-link:hover {
   margin-bottom: 1.2rem;
   letter-spacing: 3px;
   margin-right: -3px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .btn {
@@ -330,6 +320,7 @@ iframe {
   font-size: 1.5rem;
   color: var(--secondary-font-color);
   position: relative;
+  margin-top: 2rem;
   transition: color .5s;
 }
 
@@ -364,7 +355,7 @@ iframe {
   align-items: center;
 }
 
-/* Discover  menu */
+/* Discover menu */
 .image-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -389,17 +380,21 @@ iframe {
 }
 
 /* Kamayan Reservation */
-#sq-card-number, .third {
+/* Most styling in the 'Contact Us' section */
+
+.third .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, .1);
   width: 100%;
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+  height: 1px;
+} 
+
 
 .button-credit-card {
-  padding: 10px 24px;
+  font-family: var(--body-font);
+  font-size: 1.5rem;
 }
 
 /* Kamayan Between */
@@ -409,36 +404,91 @@ iframe {
 }
 
 /* Contact Us */
-.newsletter-form {
-  width: 100%;
+h3 {
+  font-family: var(--main-font);
+  color: var(--body-font-color);
+  font-size: 2.5rem;
+  top: 3.5rem;
+  left: 10rem;
+}
+
+#error-message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+#contact-form-input, #form-container {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1.5rem rgba(0,0,0, .1);
+}
+
+.input-field, .third {
+  width: 90%;
+  margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: center;
+  align-items: baseline;
 }
 
-.newsletter-input {
+.input-field input, textarea, .third input {
+  position: relative;
   width: 100%;
-  max-width: 25rem;
   padding: 1rem;
-  border-radius: .4rem;
+  margin-top: .5rem;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: var(--body-font-color);
 }
 
-.newsletter-btn {
-  background-color: transparent;
-  border: none;
-  color: var(--main-font-color-dark);
-  cursor: pointer;
-  font-size: 1.6rem;
-  padding: 1px .6rem;
+.input-field > i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--secondary-font-color);
+}
+
+.input-field .bar {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 10.5rem;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, .1);
+  width: 100%;
+  height: 1px;
+} 
+
+textarea {
+  resize: none;
+  height: 80px;
+  font-family: var(--main-font);
+}
+
+#contact-btn, #sq-creditcard {
+  margin: 3rem auto;
+  padding: 1rem 5rem;
+  background: linear-gradient(to left, #c59d5f, #515151);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3rem;
+  outline: 0;
+}
+
+#contact-btn {
+  font-size: 2.5rem;
+}
+
+#contact-btn:focus, #contact-btn:hover,  #sq-creditcard:focus,  #sq-creditcard:hover {
+  background: #c59d5f;
 }
 
 /* footer */
 footer {
-  padding: 7.9rem 0;
+  padding: 2rem 0;
   background-color: #121212;
   color: #fff;
   text-align: center;
@@ -536,6 +586,58 @@ footer {
   margin-left: 10.5rem;
 }
 
+/* Modals Styling */
+#contact-modal, #newsletter-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.modal-header h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.modal-header {
+  background: var(--body-font-color);
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.contact-close, .newsletter-close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.contact-close:hover, .contact-close:focus, .newsletter-close:hover, .newsletter-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Media Queries */
 @media screen and (min-width: 900px) {
   section {
@@ -589,9 +691,8 @@ footer {
     bottom: -3px;
   }
 
-  #banner {
+  .sub-headline {
     font-size: 10rem;
-    text-shadow: 1px 1px 1px black;
   }
 
   .first-letter {
@@ -641,12 +742,51 @@ footer {
     margin: 0 1rem;
   }
 
+  .newsletter-input {
+    min-width: 30rem;
+  }
+
   .social-icons i {
     opacity: 1;
   }
 
   .newsletter-btn {
-    margin-left: 7.5rem;
+    margin-left: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  /* will connect to JS element */
+  .open .fa-times {
+    display: block;
+  }
+
+  .open .fa-bars {
+    display: none;
+  }
+
+  .open .nav-list {
+    transform: translateX(0);
+  }
+
+  .open .nav::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contact Form  */
+@media screen and (max-width: 700px) {
+  h3 {
+    left: 50%;
+    transform: translateX(-50);
+  }
+
+  #contact-form-input {
+    border-radius: initial;
+    transform: initial;
+    box-shadow: none;
   }
 }
 
@@ -718,5 +858,14 @@ footer {
   100% {
     opacity: 0;
     transform: translateY(-1rem);
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
