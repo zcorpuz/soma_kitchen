@@ -388,6 +388,26 @@ iframe {
   background-size: cover;
 }
 
+/* Kamayan Reservation */
+#sq-card-number, .third {
+  width: 100%;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-credit-card {
+  padding: 10px 24px;
+}
+
+/* Kamayan Between */
+.kamayanBanner {
+  background: url("../img/IMG_4820.jpg") center no-repeat;
+  background-size: cover;
+}
+
 /* Contact Us */
 .newsletter-form {
   width: 100%;
@@ -569,8 +589,9 @@ footer {
     bottom: -3px;
   }
 
-  .sub-headline {
+  #banner {
     font-size: 10rem;
+    text-shadow: 1px 1px 1px black;
   }
 
   .first-letter {
