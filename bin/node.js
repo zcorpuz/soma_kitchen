@@ -17,7 +17,7 @@ var db = require("../models");
 app.set('port', process.env.PORT || 3000);
 
 
-// we sync the models with our db 
+// we sync the models with our db -adding more for example //
 // (thus creating the apropos tables)
 db.sequelize.sync().then(function () {
 	// set our app to listen to the port we set above
