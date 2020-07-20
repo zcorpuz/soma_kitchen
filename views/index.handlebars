@@ -1,4 +1,4 @@
-{{>nav}}    
+{{>nav}} 
     
     <section class="home" id="home">
         <div class="container">
@@ -40,12 +40,7 @@
                     <a href="#chefs" class="btn body-btn">Meet the Chefs</a>
                 </div>
                 <div class="restaurant-info animate-right">
-
-                        <iframe width="500" height="600" src="https://www.youtube.com/embed/G5Me_qMX-NA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        
-
-                    <!-- <img src="images/IMG_2.png" alt=""> -->
+                    <iframe width="500" height="600" src="https://www.youtube.com/embed/G5Me_qMX-NA?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -87,13 +82,16 @@
                             <i class="fas fa-asterisk"></i>
                         </div>
                     </div>
+
                     <p>We invite you to engage with us in a traditional Filipino meal with our custom menu Kamayan Event! We will bring the necessary equipment to wherever you need us so you can enjoy freshly cooked Filipino food.  </p>
                     <a target="_top" style=" background-color: #c59d5f; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; " href="https://square.site/book/1WDXHPGTBR99Y/soma-kitchen-llc" rel="nofollow"> Reserve Now</a> <!-- End Square Appointments Embed code -->
+
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- Discover menu ends here  -->
+    <!-- Discover Kamayan ends here  -->
 
     <section class="perfect-blend between">
         <div class="container">
@@ -136,10 +134,71 @@
     </section>
     <!-- Culinary Delights end here  -->
 
+    <section class="kamayanBanner between">
+        <div class="container">
+            <div class="global-headline">
+                <div class="animate-top">
+                    <h2 class="sub-headline" id="banner">
+                        <span class="first-letter">F</span>lavor
+                    </h2>
+                </div>
+                <div class="animate-bottom">
+                    <h1 class="headline">Explosion</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
+     <section id="reservations" class="kamayan">
+        <div class="container">
+            <div class="restaurant-info">
+                <div class="restaurant-description padding-right animate-left">
+                    <form id="form-container">
+                        <h3>Reserve for Your Event</h3>
+                        <div class="third">
+                            <input id="sq-card-number">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="third">
+                            <input id="sq-expiration-date">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="third">
+                            <input id="sq-cvv">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="third">
+                            <input id="sq-postal-code">
+                            <span class="bar"></span>
+                        </div>                        
+                        <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Confirm $100.00</button>
+                    </form> 
+                </div>
+                <!-- end #form-container -->
 
+                <div class="restaurant-description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">K</span>amayan 
+                        </h2>
+                        <h1 class="headline headline-dark">Reservation</h1>
+                        <div class="asterisk">
+                            <i class="fas fa-asterisk"></i>
+                        </div>
+                    </div>
+                    <p>Soma Kitchen offers a unique Filipino cultural culinary experience, our most popular being the Kamayan service. 
+                    <span class=italics>What is Kamayan?</span>    
+                    Kamayan translates to <span class=italics>eating with your hands</span>. You will enjoy an assortment of grilled meats along with an abundance of seafood, accompanied with white and fried rice, and many more!</p>
+                    <p> If you are interested in making a reservation, you can contact us below to discuss your event needs. In order to confirm your reservation, we require a $100.00 deposit. All information is secure through Square. 
+                    </p>
+                    <a href="#contactUs" class="btn body-btn"> Contact Us</a>
+                    <br><a target="_top" style=" background-color: #c59d5f; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; " href="https://square.site/book/1WDXHPGTBR99Y/soma-kitchen-llc" rel="nofollow"> Reserve Now</a> <!-- End Square Appointments Embed code -->
 
-
+                </div>
+            </div>
+        </div>
+    </section>
+     {{!-- Square and Reservations --}}
 
     <section class="fine-dining between">
         <div class="container">
@@ -155,81 +214,13 @@
             </div>
         </div>
     </section>
+    <!-- End of Fine Dining Section -->
 
- {{!-- Square and Reservations --}}
-     <section id="reservations" class="kamayan">
-        <div class="container">
-            <div class="restaurant-info">
-                <div class="restaurant-description padding-right animate-left">
-                    <div class="global-headline">
-                        <h2 class="sub-headline">
-                            <span class="first-letter">K</span>amayan 
-                        </h2>
-                        <h1 class="headline headline-dark">Reservation</h1>
-                        <div class="asterisk">
-                            <i class="fas fa-asterisk"></i>
-                        </div>
-                    </div>
-                    <p>Soma Kitchen offers a unique Filipino cultural culinary experience. Upon reservation, we offer a Kamayan service. What is Kamayan? Kamayan translates to "eating with your hands". You will enjoy an assortment of grilled meats, fish, an abundance of seafood, white and fried rice, and many more!</p>
-                    <p> If interested in making a reservation, you can contact us below to discuss your event needs. In order to confirm reservation, we require a $100.00 deposit. All information is secure through Square. 
-                    </p>
-                    <a href="#contactUs" class="btn body-btn"> Contact Us</a>
-                    <br><a target="_top" style=" background-color: #c59d5f; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; " href="https://square.site/book/1WDXHPGTBR99Y/soma-kitchen-llc" rel="nofollow"> Reserve Now</a> <!-- End Square Appointments Embed code -->
-
-                </div>
-
-                <div class="restaurant-info animate-right">
-                    <div id="form-container">
-                        <div id="sq-card-number"></div>
-                        <div class="third" id="sq-expiration-date"></div>
-                        <div class="third" id="sq-cvv"></div>
-                        <div class="third" id="sq-postal-code"></div>
-                        <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Confirm $100.00</button>
-                    </div> 
-                    <!-- end #form-container -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="kamayanBanner between">
-        <div class="container">
-            <div class="global-headline">
-                <div class="animate-top">
-                    <h2 class="sub-headline" id="banner">
-                        <span class="first-letter">K</span>amayan
-                    </h2>
-                </div>
-                <div class="animate-bottom">
-                    <h1 class="headline">Event</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="contactUs" class="discover-menu">
+    <section id="contactUs">
         <div class="container">
             <div class="restaurant-info">
                 <div class="padding-right animate-left">
-                    <form action="" >
-                        <div class="name">
-                            <input type="text" class="contact-us" placeholder="First Name">
-                            <input type="text" class="contact-us" placeholder="Last Name">
-                        </div>
-                        <div class="email">
-                            <input type="text" class="contact-us" placeholder="Email Address">
-                        </div>
-                        <div class="message-input">
-                            <input type="textarea" class="contact-us" placeholder="Message">
-                        </div>
-                        <button class="contact-btn" type="submit">
-                            <i class="fas fa-envelope"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="restaurant-description animate-right">
+
                     <div class="global-headline">
                         <h2 class="sub-headline">
                             <span class="first-letter">L</span>ike what 
@@ -239,11 +230,70 @@
                             <i class="fas fa-asterisk"></i>
                         </div>
                     </div>
-                    <p>Please send us your inquries or subscribe to our newsletter. </p>
-                    <a href="#newsletter" class="btn body-btn">Subscribe</a>
+                    <p>Please send us your inquiries or subscribe to our newsletter. </p>
+                    <a href="#newsletter" class="btn body-btn">Subscribe</a>                    
+                </div>
+
+                <div class="restaurant-description animate-right">
+                    <form id="contact-form-input" action="" >
+                        <h3>Contact Us</h3>
+                        <div id="error-message"></div>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" 
+                            class="contact-input" id="name" placeholder="Full Name">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone-alt"></i>
+                            <input type="text" 
+                            class="contact-input"
+                            id="phone-number" placeholder="Phone Number">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" 
+                            class="contact-input"
+                            id="email" placeholder="Email Address">
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-comment-alt"></i>
+                            <textarea class="contact-input"
+                            id="message-input" placeholder="Message"></textarea>
+                            <span class="bar"></span>
+                        </div>
+                        <i class="fab fa-telegram-plane" id="contact-btn" type="submit"></i>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <script src = "../public/assets/js/setup.js"></script>
-{{>footer}}   
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="contact-close">&times;</span>
+                <h2>Message Sent!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your inquiry! We will reply within 3 days. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="newsletter-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="newsletter-close">&times;</span>
+                <h2>You're part of our list!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for subscribing to our newsletter! You will be one of the first to know about our restaurant updates. </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Modals -->
+
+{{>footer}} 
