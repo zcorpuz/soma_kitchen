@@ -7,7 +7,7 @@
                 <div class="footer-content-about animate-top">
                     <h4>About Soma Kitchen</h4>
                     <div class="asterisk"><i class="fas fa-asterisk"></i></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse, qui fugiat voluptatem fugit quasi quisquam odit aperiam eum itaque quo sapiente maiores exercitationem expedita harum saepe suscipit quaerat ratione?</p>
+                    <p>We are LA-based chefs catering to the Greater Los Angeles Area, hosting private events, lunches, and dinners. Our mission is to provide an unforgettable dining experiences by using hyper-seasonal quality ingredients and establishing amazing connections with all our clients.</p>
                 </div>
                 <div class="footer-content-divider animate-bottom">
                     <div class="social-media">
@@ -28,6 +28,38 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
+                    <!-- Trigger/Open The Modal -->
+                <button class="waves-effect waves-light btn modal-trigger" href="#modal1" id="myBtn">Log In</button>
+                    <!-- The Modal -->
+                    <div id="modal1" class="modal">
+                        <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                    {{> login}}
+                                    <div class="modal-footer">
+                                        <a href="/views/layouts/dashboard.handlebars" class="modal-close waves-effect waves-green btn-flat"    id="adminLogin">Sign In</a>
+                                    </div>
+                                </div>
+                                {{!-- <p>Some text in the Modal..</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div>
+
+
+    {{!-- Singup for new admin --}}
+     <div class="modal-content">
+                                <span class="close">&times;</span>
+                                  {{> signupAdmin}}
+                                    <div class="modal-footer">
+                                        <a href="/views/layouts/dashboard.handlebars" class="modal-close waves-effect waves-green btn-flat"    id="newAdmin">Sign In</a>
+                                    </div>
+                                </div>
+
+</div>
+
+
     </footer>

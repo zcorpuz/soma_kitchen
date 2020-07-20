@@ -1,20 +1,23 @@
 {
-    "development": {
-      "username": "root",
-      "password": "blinky182",
-      "database": "somaKitchen",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-      "password": "blinky182",
-      "database": "somaKitchen",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    "production": {
-      "use_env_variable": "",
-      "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "L@kers51",
+    "database": "somakitchen_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "L@kers51",
+    "database": "somakitchen_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "L@kers51",
+    "database": "somakitchen_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
+}

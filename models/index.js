@@ -35,3 +35,5 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+// cli used to create this file
+// npx sequelize-cli model:generate --name Admin --attributes firstName:string,lastName:string,password:string    
