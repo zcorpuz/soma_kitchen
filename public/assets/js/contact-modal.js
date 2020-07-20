@@ -42,6 +42,27 @@
             errorMessage.style.display = "none";
         }
 
+        let newContact = {
+            email: clientEmail,
+            fullName: clientName,
+            message: clientMessage,
+            phoneNumber: clientPhoneNumber
+        };
+  
+        console.log(newContact);
+    
+        // Send the POST request.
+        $.ajax("/api/contactUs", {
+        type: "POST",
+        data: newContact
+        }).then(
+            () => {
+                console.log("created new contact guest");
+                // Reload the page to get the updated list
+                // location.reload();
+            }
+        );
+
         clearInputForm();
 
         contactModal.style.display = 'block';

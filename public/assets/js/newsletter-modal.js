@@ -14,6 +14,24 @@
           return false;
       }
 
+      let newSubscriber = {
+        email: newsletterEmail
+      };
+
+      console.log(newSubscriber);
+  
+      // Send the POST request.
+      $.ajax("/api/subscribe", {
+        type: "POST",
+        data: newSubscriber
+      }).then(
+        () => {
+          console.log("created new subscriber");
+          // Reload the page to get the updated list
+          // location.reload();
+        }
+      );
+
       clearNewsletterForm();
       newsletterModal.style.display = 'block';
   })

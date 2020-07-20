@@ -5,6 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const squareConnect = require('square-connect');
+var mysql = require("mysql");
 
 const PORT = process.env.PORT || 9000;
 // Access Token for Square Payment Form API
@@ -30,6 +31,57 @@ app.get('/', (req, res) => {
     res.render('index', {layout : 'main'});
 });
 
+// MySQL Connection
+const connection = mysql.createConnection({
+  host: "localhost",
+  port: 3306,
+  user: "root",
+  password: "Finally08",
+  database: "somaKitchen"
+});
+
+connection.connect(err => {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
+
+// Post route to insert guest who wants to contact the business
+app.post("/api/contactUs", (req, res) => {
+  connection.query("INSERT INTO contactUs (email, fullName, message, phoneNumber) VALUES (?, ?, ?, ?)", [req.body.email, req.body.fullName, req.body.message, req.body.phoneNumber], function(
+    err,
+    result
+  ) {
+    if (err) {
+      // If an error occurred, send a generic server failure
+      return res.status(500).end();
+    }
+
+    // Send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
+});
+
+// Post route to insert new subscriber
+app.post("/api/subscribe", (req, res) => {
+  connection.query("INSERT INTO subscribe (email) VALUES (?)", [req.body.email], function(
+    err,
+    result
+  ) {
+    if (err) {
+      // If an error occurred, send a generic server failure
+      return res.status(500).end();
+    }
+
+    // Send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
+});
+
+
+// SquareAPI
 //Set Square Connect credentials and environment
 const defaultClient = squareConnect.ApiClient.instance;
 
