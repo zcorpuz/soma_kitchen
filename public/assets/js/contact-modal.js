@@ -1,6 +1,6 @@
 (function () {
 
-    $("#contact-btn").on("click", function(event) {
+    $("#contact-btn").on("click", event => {
         event.preventDefault();
 
         let clientName = document.getElementById("name").value;
@@ -48,8 +48,6 @@
             message: clientMessage,
             phoneNumber: clientPhoneNumber
         };
-  
-        console.log(newContact);
     
         // Send the POST request.
         $.ajax("/api/contactUs", {
@@ -76,19 +74,19 @@
     window.addEventListener('click', outsideClick);
 
     // Close
-    function closeModal() {
+    const closeModal = () => {
         contactModal.style.display = 'none';
     }
 
     // Close If Outside Click
-    function outsideClick(e) {
+    const outsideClick = e => {
     if (e.target == contactModal) {
         contactModal.style.display = 'none';
     }
     }
 
     // Clear form
-    function clearInputForm() { 
+    const clearInputForm = () => { 
         document.getElementById("contact-form-input").reset();
     }
 })();

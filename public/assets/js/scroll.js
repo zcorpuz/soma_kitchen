@@ -2,7 +2,7 @@
 // call this function where whatever you pass in will be returned to you
 
 (function () {
-    const selectElement = function(element) {
+    const selectElement = element => {
         return document.querySelector(element);
     };
 
@@ -11,11 +11,11 @@
     let navLinkClick = selectElement('.item-toggle');
 
 
-    menuToggler.addEventListener('click', function () {
+    menuToggler.addEventListener('click', () => {
         body.classList.toggle('open');
     })
 
-    navLinkClick.addEventListener('click', function () {
+    navLinkClick.addEventListener('click', () => {
         body.classList.toggle('open');
     })
     

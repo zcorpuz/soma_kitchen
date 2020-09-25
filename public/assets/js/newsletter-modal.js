@@ -4,7 +4,7 @@
   const newsletterModal = document.querySelector('#newsletter-modal');
   const closeNewsletterModalBtn = document.querySelector('.newsletter-close');
 
-  $("#newsletter-btn").on("click", function(event) {
+  $("#newsletter-btn").on("click", event => {
       event.preventDefault();
     
       let newsletterEmail = document.getElementById("newsletter-email").value;
@@ -17,8 +17,6 @@
       let newSubscriber = {
         email: newsletterEmail
       };
-
-      console.log(newSubscriber);
   
       // Send the POST request.
       $.ajax("/api/subscribe", {
@@ -41,19 +39,19 @@
   window.addEventListener('click', outsideClick);
 
   // Close
-  function closeModal() {
+  const closeModal = () => {
       newsletterModal.style.display = 'none';
   }
 
   // Close If Outside Click
-  function outsideClick(e) {
+  const outsideClick = e => {
     if (e.target == newsletterModal) {
       newsletterModal.style.display = 'none';
     }
   }
 
   // Clear form
-  function clearNewsletterForm() {
+  const clearNewsletterForm = () => {
       document.getElementById("newsletter").reset();
   }
 

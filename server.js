@@ -5,7 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
 const squareConnect = require('square-connect');
-var mysql = require("mysql");
+const mysql = require("mysql");
 
 const PORT = process.env.PORT || 9000;
 // Access Token for Square Payment Form API
