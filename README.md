@@ -52,23 +52,24 @@ The reason we chose to partner with this client is because they were interested 
 This application is responsive, where no matter what the screen size is (or device used), the application would still be presentable to the user. 
 
 ### Demo
-This is the demo of the website: https://zcorpuz.github.io/behlendorfLaw/.
+This is the demo of the website: https://protected-everglades-09109.herokuapp.com/.
 
 
 ### Landing Page
 This is how the site will look like when:
 
 * opened on a desktop:
-![Law Office Website in Desktop Form](./images/law-desktop.png)
+![Law Office Website in Desktop Form](./public/img/soma-desktop)
 
 * opened on a mobile device:
 <br />
 
-![Law Office Website in Mobile Form](./images/law-mobile.png)
+![Law Office Website in Mobile Form](./public/img/soma-mobile)
 
 ### Built With 
-* [Materialize](https://materializecss.com/)
-* [jQuery](https://jquery.com/) 
+* [Handlebars](https://materializecss.com/)
+* [Node.js](https://materializecss.com/)
+* [Express.js](https://materializecss.com/)
 
 
 ## Roadmap / Todo
@@ -84,9 +85,8 @@ This website was done with a collaborative effort from Brandon Myhan, Carolina A
 
 
 ## Acknowledgements
-* [Twitter API](https://developer.twitter.com/en/docs)
-* [OpenLayers Map API](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html) 
-* [ElasticEmail API](https://api.elasticemail.com/public/help)
+* [ScrollReveal](https://developer.twitter.com/en/docs)
+* [MySQL](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html) 
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/zcorpuz/soma_kitchen.svg?style=for-the-badge
@@ -94,4 +94,4 @@ This website was done with a collaborative effort from Brandon Myhan, Carolina A
 [issues-shield]: https://img.shields.io/github/issues/zcorpuz/soma_kitchen.svg?style=for-the-badge
 [issues-url]: https://github.com/zcorpuz/soma_kitchen/issues
 [license-shield]: https://img.shields.io/github/license/zcorpuz/soma_kitchen.svg?style=for-the-badge
-[license-url]: https://github.com/zcorpuz/soma_kitchen/blob/master/LICENSE.md
+[license-url]: https://github.com/zcorpuz/soma_kitchen/master/LICENSE.md
