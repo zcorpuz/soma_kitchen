@@ -5,10 +5,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/zcorpuz/soma_kitchen">
-    <img src="images/navBarLogo.png" alt="Logo">
+    <img src="public/assets/img/favicon.ico" alt="Logo">
   </a>
 
-  <h3 align="center">Law Offices of Theodore A. Behlendorf Responsive Website</h3>
+  <h3 align="center">Soma Kitchen Responsive Website</h3>
 
   <p align="center">
     <br />
@@ -45,11 +45,13 @@
 
 
 ## About the Project
-This website is developed for our client, Law Offices of Theodore A. Behlendorf, based in Los Angeles, CA. We were asked to build a website that is easy-to-read but that is also presentable to any client who comes across this site. It includes a home page, an about page, and a contact page. 
+This website is developed for our client, Soma Kitchen, based in Downtown Los Angeles, CA. We were asked to revamp a website with a modern touch to reflect the restaurant's new brand. By doing so, the client would be able to retain their customers so that they (the customers) are able to keep up-to-date with any new menu items from the restaurant. Thus, this will maintain (if not, increase) the retention rate of customers, which will keep the restaurant in business, especially during the COVID-19 pandemic. 
 
-The reason we chose to partner with this client is because they were interested in increasing their online presence, especially during the COVID-19 pandemic. They knew they would not receive the same number of in-person clientele, so they wanted to establish a platform where they would connect to their clientele virtually. 
+This application is built as one page, where if you scroll down, you will see all the sections, each with a different animated effect. This is due to the ScrollReveal JavaScript Library. You can also access each section with a navigation bar, in case you do not have time to scroll through the whole page. 
 
 This application is responsive, where no matter what the screen size is (or device used), the application would still be presentable to the user. 
+
+The reason we chose to partner with this client is because they were interested in increasing their online presence, especially during the COVID-19 pandemic. They knew they would not receive the same number of in-person clientele, so they wanted to establish a platform where they would connect to their clientele virtually. 
 
 ### Demo
 This is the demo of the website: https://protected-everglades-09109.herokuapp.com/.
@@ -59,12 +61,14 @@ This is the demo of the website: https://protected-everglades-09109.herokuapp.co
 This is how the site will look like when:
 
 * opened on a desktop:
-![Law Office Website in Desktop Form](./public/img/soma-desktop)
+<br />
+
+![Soma Kitchen Website in Desktop Form](./public/assets/img/soma-desktop)
 
 * opened on a mobile device:
 <br />
 
-![Law Office Website in Mobile Form](./public/img/soma-mobile)
+![Law Office Website in Mobile Form](./public/assets/img/soma-mobile)
 
 ### Built With 
 * [Handlebars](https://materializecss.com/)
