@@ -56,24 +56,24 @@ The reason we chose to partner with this client is because they were interested 
 ### Demo
 This is the demo of the website: https://protected-everglades-09109.herokuapp.com/.
 
-
 ### Landing Page
 This is how the site will look like when:
 
 * opened on a desktop:
 <br />
 
-![Soma Kitchen Website in Desktop Form](./public/assets/img/soma-desktop)
+![Soma Kitchen Website in Desktop Form](./public/assets/img/soma-desktop.png)
 
 * opened on a mobile device:
 <br />
 
-![Law Office Website in Mobile Form](./public/assets/img/soma-mobile)
+![Soma Kitchen Website in Mobile Form](./public/assets/img/soma-mobile.png)
 
 ### Built With 
-* [Handlebars](https://materializecss.com/)
-* [Node.js](https://materializecss.com/)
-* [Express.js](https://materializecss.com/)
+* [Handlebars](https://handlebarsjs.com/)
+* [Node.js](https://nodejs.org/en/)
+* [Express.js](https://expressjs.com/)
+* [MySQL](https://www.mysql.com/) 
 
 
 ## Roadmap / Todo
@@ -89,8 +89,8 @@ This website was done with a collaborative effort from Brandon Myhan, Carolina A
 
 
 ## Acknowledgements
-* [ScrollReveal](https://developer.twitter.com/en/docs)
-* [MySQL](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html) 
+* [ScrollReveal](https://scrollrevealjs.org/)
+* [Stripe API](https://stripe.com/docs)
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/zcorpuz/soma_kitchen.svg?style=for-the-badge
